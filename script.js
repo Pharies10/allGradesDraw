@@ -1,7 +1,7 @@
 var screen = {width:1000,height:700}
 var margins = {top:10,right:50,left:25,bottom:50}
 
-var dataPromise = d3.json("penguins/classData.json")
+var dataPromise = d3.json("/penguins/classData.json")
 
 var success = function(data)
     {
@@ -77,7 +77,7 @@ var setup = function(classroom)
     d3.select("div *").remove()
     d3.select("div")
       .append("img")
-      .attr("src", function(){return "/penguins/" + penguin.picture})
+      .attr("src", function(){return "penguins/" + penguin.picture})
 }
 
 var drawGraph = function(classroom, xScale, yScale)
