@@ -91,7 +91,7 @@ var drawGraph = function(classroom, xScale, yScale)
                    .attr("stroke","black")
                    .attr("stroke-width", 3)
                    .attr("class","line")
-                   .on("click", function(d,index)
+                   .on("mouseover", function(d,index)
                     {
                         createImage(classroom[index])
 
